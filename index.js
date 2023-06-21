@@ -28,8 +28,6 @@ onValue(shoppingListInDB, function(snapshot){
         clearShoppingList();
         for(let i=0; i<listDB.length; i++){
             let shoppingItem = listDB[i]
-            let shoppingItemID = shoppingItem[0]
-            let shoppingItemValue = shoppingItem[1];
             addToList(shoppingItem);
         }
     
